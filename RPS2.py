@@ -3,30 +3,34 @@ import random
 # moves
 move = ('R','P','S')
 
-# last two moves
-last_mat = [[['RRR','RRP','RRS'],
-             ['RPR','RPP','RPS'],
-             ['RSR','RSP','RSS']],
-            [['PRR','PRP','PRS'],
-             ['PPR','PPP','PPS'],
-             ['PSR','PSP','PSS']],
-            [['SRR','SRP','SRS'],
-             ['SPR','SPP','SPS'],
-             ['SSR','SSP','SSS']]]
+# last three moves
+last_mat = [
+  [['RRR','RRP','RRS'],
+   ['RPR','RPP','RPS'],
+   ['RSR','RSP','RSS']],
+  [['PRR','PRP','PRS'],
+   ['PPR','PPP','PPS'],
+   ['PSR','PSP','PSS']],
+  [['SRR','SRP','SRS'],
+   ['SPR','SPP','SPS'],
+   ['SSR','SSP','SSS']]
+]
 
 # best counter move
 next_best = {'R':'P','P':'S','S':'R'}
 
 # count all next for all last three ->
-next_mat = [[[[0,0,0],[0,0,0],[0,0,0]],
-             [[0,0,0],[0,0,0],[0,0,0]],
-             [[0,0,0],[0,0,0],[0,0,0]]],
-            [[[0,0,0],[0,0,0],[0,0,0]],
-             [[0,0,0],[0,0,0],[0,0,0]],
-             [[0,0,0],[0,0,0],[0,0,0]]],
-            [[[0,0,0],[0,0,0],[0,0,0]],
-             [[0,0,0],[0,0,0],[0,0,0]],
-             [[0,0,0],[0,0,0],[0,0,0]]]]
+next_mat = [
+  [[[0,0,0],[0,0,0],[0,0,0]],
+   [[0,0,0],[0,0,0],[0,0,0]],
+   [[0,0,0],[0,0,0],[0,0,0]]],
+  [[[0,0,0],[0,0,0],[0,0,0]],
+   [[0,0,0],[0,0,0],[0,0,0]],
+   [[0,0,0],[0,0,0],[0,0,0]]],
+  [[[0,0,0],[0,0,0],[0,0,0]],
+   [[0,0,0],[0,0,0],[0,0,0]],
+   [[0,0,0],[0,0,0],[0,0,0]]]
+]
 
 def player(prev_play, opponent_history=[]):
   opponent_history.append(prev_play)
