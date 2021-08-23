@@ -20,6 +20,10 @@ next_mat = [
   [[0,0,0],[0,0,0],[0,0,0]]
 ]
 
+# this bot maps all permutations (9) of two move sequences
+# for each counts occurrence of third move options (3)
+# predicts third move
+# chooses best counter move
 def player(prev_play, opponent_history=[]):
   opponent_history.append(prev_play)
 

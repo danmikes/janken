@@ -32,6 +32,10 @@ next_mat = [
    [[0,0,0],[0,0,0],[0,0,0]]]
 ]
 
+# this bot maps all permutations (27) of three move sequences
+# for each counts occurrence of fourth move options (3)
+# predicts next move
+# choose best counter move
 def player(prev_play, opponent_history=[]):
   opponent_history.append(prev_play)
 

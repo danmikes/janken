@@ -38,3 +38,15 @@ The unit tests for this project are in `test_module.py`. We imported the tests f
 ### Submitting
 
 Copy your project's URL and submit it to freeCodeCamp.
+
+### Solution
+
+Four bots were created, with increasing chances of winning.
+
+- RPS: This bot makes random moves.
+
+- RPS0: This bot assumes opponent never makes same move twice and from remaining two moves chooses winning counter move.
+
+- RPS1: This bot predicts next move from occurrence of 3-move sequences (Markov chains) and chooses winning counter move.
+
+- RPS2: This bot predicts next move from occurrence of 4-move sequences (Markov chains) and chooses winning counter move.
