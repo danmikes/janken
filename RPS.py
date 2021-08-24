@@ -1,6 +1,6 @@
 import random
 
-#moves
+# moves
 move = ('R','P','S')
 
 # this bot makes random moves

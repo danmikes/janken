@@ -43,7 +43,7 @@ Copy your project's URL and submit it to freeCodeCamp.
 
 Four bots were created, with increasing chances of winning.
 
-- RPS: This bot makes random moves.
+- RPS: This bot make random moves.
 
 - RPS0: This bot assumes opponent never makes same move twice and from remaining two moves chooses winning counter move.
 
