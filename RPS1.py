@@ -76,7 +76,7 @@ def player(prev_play, opponent_history=[]):
 
   # todo: add random moves
   # ratio of naive / smart action
-  beta = 0.5
+  beta = 0.2
   # generate choice between naive and smart action
   alpha = random.rand()
   if alpha > beta:
