@@ -7,6 +7,6 @@ move = ('R','P','S')
 def player(prev_play, opponent_history=[]):
 
   # generate random move
-  guess = move[random.randint(0,2)]
+  guess = random.choice(move)
 
   return guess
