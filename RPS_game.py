@@ -16,8 +16,7 @@ def play(player1, player2, num_games, verbose=False):
             results["tie"] += 1
             winner = "Tie."
         elif (p1_play == "P" and p2_play == "R") or (
-                p1_play == "R" and p2_play == "S") or (p1_play == "S"
-                                                       and p2_play == "P"):
+                p1_play == "R" and p2_play == "S") or (p1_play == "S" and p2_play == "P"):
             results["p1"] += 1
             winner = "Player 1 wins."
         elif p2_play == "P" and p1_play == "R" or p2_play == "R" and p1_play == "S" or p2_play == "S" and p1_play == "P":
